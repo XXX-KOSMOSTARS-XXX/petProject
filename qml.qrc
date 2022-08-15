@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>Home.ui.qml</file>
+        <file>Pet.ui.qml</file>
+        <file>Coloring.ui.qml</file>
+        <file>qtquickcontrols2.conf</file>
+        <file>Interior.ui.qml</file>
+        <file>Settings.ui.qml</file>
+    </qresource>
+</RCC>
