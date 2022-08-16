@@ -5,8 +5,21 @@ Page {
 
     title: qsTr("Выбор интерьера")
 
-    Label {
-        text: qsTr("Несколько видов дома")
+    Column {
+        id: interiorButtons
         anchors.centerIn: parent
+
+        RadioButton {
+            id: firstLounge
+            text: qsTr("Гостиная 1")
+        }
+        RadioButton {
+            id: secondLounge
+            text: qsTr("Гостиная 2")
+        }
+        RadioButton {
+            id: bed
+            text: qsTr("В лежанке")
+        }
     }
 }

@@ -5,8 +5,49 @@ Page {
 
     title: qsTr("Настройки")
 
-    Label {
-        text: qsTr("Здесь можно будет изменить тему")
-        anchors.centerIn: parent
+    Column {
+        id: themeButtons
+        anchors.horizontalCenter: parent.horizontalCenter
+        anchors.top: parent.top
+        anchors.topMargin: 100
+        Text {
+            id: themeName
+            anchors.horizontalCenter: parent.horizontalCenter
+            text: qsTr("Выберите тему")
+            font.pointSize: 11
+            minimumPixelSize: 14
+        }
+
+        RadioButton {
+            id: blueTheme
+            text: qsTr("Нежно-голубая тема")
+        }
+        RadioButton {
+            id: pinkTheme
+            text: qsTr("Пастельно-розовая тема")
+        }
+    }
+
+    Column {
+        id: languageButtons
+        anchors.horizontalCenter: parent.horizontalCenter
+        anchors.bottom: parent.bottom
+        anchors.bottomMargin: 100
+        Text {
+            id: languageName
+            anchors.horizontalCenter: parent.horizontalCenter
+            text: qsTr("Выберите язык")
+            font.pointSize: 11
+            minimumPixelSize: 14
+        }
+
+        RadioButton {
+            id: russian
+            text: qsTr("Русский")
+        }
+        RadioButton {
+            id: english
+            text: qsTr("English")
+        }
     }
 }

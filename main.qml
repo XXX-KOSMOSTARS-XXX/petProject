@@ -3,10 +3,10 @@ import QtQuick.Controls 2.5
 
 ApplicationWindow {
     id: window
-    width: 640
-    height: 480
+    width: 350
+    height: 600
+    minimumWidth: 350
     minimumHeight: 600
-    minimumWidth: 400
     visible: true
     title: qsTr("petProject")
 

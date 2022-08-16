@@ -5,9 +5,18 @@ Page {
 
     title: qsTr("Выбор питомца")
 
-    Label {
-        text: qsTr("Кошка
-                    Собака")
+
+    Column {
+        id: petButtons
         anchors.centerIn: parent
+
+        RadioButton {
+            id: cat
+            text: qsTr("Кошка")
+        }
+        RadioButton {
+            id: dog
+            text: qsTr("Собака")
+        }
     }
 }

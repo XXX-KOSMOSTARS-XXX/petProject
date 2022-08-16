@@ -5,8 +5,25 @@ Page {
 
     title: qsTr("Выбор окраски питомца")
 
-    Label {
-        text: qsTr("Рыжий, черный, белый, трехцветный")
+    Column {
+        id: coloringButtons
         anchors.centerIn: parent
+
+        RadioButton {
+            id: red
+            text: qsTr("Рыжий")
+        }
+        RadioButton {
+            id: black
+            text: qsTr("Черный")
+        }
+        RadioButton {
+            id: white
+            text: qsTr("Белый")
+        }
+        RadioButton {
+            id: tricolor
+            text: qsTr("Трехцветный")
+        }
     }
 }
